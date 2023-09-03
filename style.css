@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Rubik Iso";
+    src: url("./RubikIso-Regular.ttf");
+}
+@font-face {
+    font-family: "Just Sans";
+    src: url("./JUST Sans Regular.otf");
+}
+:root {
+    --white: #ffffff;
+    --oxford-blue: #040827ff;
+    --light-blue: #95c3c6ff;
+    --lapis-lazuli: #33658aff;
+    --pink-lavender: #d8a7caff;
+    --chinese-violet: #996888ff;
+}
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--white);
+    color: var(--oxford-blue);
+    font-family: "Just Sans";
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#name {
+    text-align: center;
+}
+h1 {
+    font-family: "Rubik Iso";
+    font-size: 40px;
+    text-align: center;
+    color: var(--chinese-violet)
+}
+.question {
+    width: 100%;
+    height: 5vw;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
