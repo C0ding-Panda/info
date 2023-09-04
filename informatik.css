@@ -54,37 +54,3 @@ body{
     justify-content: center;
     align-items: center;
 }
-#text {
-    width: 80vw;
-    height:70%;
-    background-color: var(--oxford-blue);
-    margin: 0;
-    border-radius: 40px;
-}
-#info-header{
-    text-align: center;
-    font-family: "Just Sans";
-    font-size: 7vw;
-    color: var(--pink-lavender);
-}
-#info-paragraph {
-    margin: 0 4vw;
-    color: var(--pink-lavender);
-    font-size: 5vw;
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-.special {
-    text-decoration: none;
-    letter-spacing: 4px;
-    color: var(--white);
-    box-shadow: var(--white) -6px 6px 4px 1px;
-    padding: 3px;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-.special:hover{
-    box-shadow: var(--lapis-lazuli) -8px 8px 4px 1px;
-    color: var(--light-blue);
-}
-
