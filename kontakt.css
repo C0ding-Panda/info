@@ -63,8 +63,8 @@ a {
     border-width: 1.5vw;
     border-color: var(--oxford-blue);
 }
-#forth {
-    grid-area: 2 / 2 / 3 / 3;
+#back {
+    grid-area: 2 / 1 / 3 / 2;
 }
 .btn-link{
     color: var(--oxford-blue);
@@ -88,14 +88,13 @@ a {
     border-radius: 40px;
     grid-area: 2 / 2 / 3 / 3;
 }
-
-#info-header{
+#it-header{
     text-align: center;
     font-family: "Just Sans";
     font-size: 7vw;
     color: var(--pink-lavender);
 }
-#info-paragraph {
+#it-paragraph {
     margin: 0 4vw;
     color: var(--pink-lavender);
     font-size: 4.5vw;
@@ -115,4 +114,7 @@ a {
     box-shadow: var(--light-blue) -8px 8px 4px 1px;
     color: var(--light-blue);
 }
-
+#email {
+    letter-spacing: 3px;
+    color: var(--light-blue);
+}
