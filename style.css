@@ -51,6 +51,8 @@ a {
     grid-template-rows: 1fr 0.5fr;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 .main-header {
     color: var(--pink-lavender);
@@ -131,4 +133,56 @@ a {
 .marked {
     letter-spacing: 3px;
     color: var(--light-blue);
+}
+
+/* css media queries section */
+
+/* optimized for small phones */
+
+/* optimized for tablets */
+@media only screen and (min-width: 600px) {
+    .main-header {
+        font-size: 3rem;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
+    #main-container {
+        grid-template-rows: 2.5fr 10fr 2.5fr;
+    }
+    #info-header {
+        font-size: 2.3rem;
+    }
+    #info-paragraph {
+        font-size: 1.4rem;
+        line-height: 35px;
+    }
+}
+/* optimized for laptops / computers*/
+@media only screen and (min-width: 800px) {
+    .main-header {
+        font-size: 4rem;
+    }
+    #main-container {
+        grid-template-rows: 2fr 10fr 2fr;
+    }
+    #info-header {
+        font-size: 3.3rem;
+    }
+    #info-paragraph {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .main-header {
+        font-size: 5rem;
+    }
+    #info-header {
+        font-size: 4.3rem;
+    }
+    #info-paragraph {
+        font-size: 2rem;
+        line-height: 45px;
+    }
 }

@@ -21,14 +21,13 @@ html{
     padding: 0;
 }
 body{
-    background-color: var(--white);
+    background-color: var(--light-blue);
     color: var(--oxford-blue);
     font-family: "Just Sans";
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
 }
 a {
     text-decoration: none;
@@ -41,11 +40,14 @@ a {
     grid-template-rows: 1fr 0.5fr;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
 }
 .main-header {
     color: var(--pink-lavender);
     font-family: "Rubik Glitch";
-    font-size: 10vw;
+    font-size: 2rem;
     text-align: center;
     margin: 0;
     width: 100%;
@@ -79,7 +81,7 @@ a {
     background-color: var(--light-blue);
     display: grid;
     grid-template-columns: 1fr 10fr 1fr ;
-    grid-template-rows: 1fr 14fr 1fr;
+    grid-template-rows: 0.8fr 14fr 0.8fr;
 }
 
 #text {
@@ -97,16 +99,17 @@ a {
 #it-header{
     text-align: center;
     font-family: "Just Sans";
-    font-size: 7vw;
+    font-size: 2.5rem;
     color: var(--pink-lavender);
     grid-area: 1 / 1 / 1 / 4;
 }
 .img {
-    width: 90%;
-    border-radius: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 .project-links {
-    font-size: 5vw;
+    font-size: 2rem;
     color: var(--light-blue);
     align-self: center;
     justify-self: center;
@@ -117,6 +120,8 @@ a {
     padding: 3px;
     cursor: pointer;
     transition: 0.5s ease;
+    align-self: center;
+    justify-self: center;
 }
 .project-links:hover{
     box-shadow: var(--light-blue) -8px 8px 4px 1px;
@@ -157,4 +162,53 @@ a {
 }
 #hyperjump-link {
     grid-area: 5 / 3 / 6 / 3;
+}
+
+/* css media queries section */
+
+/* optimized for small phones */
+
+/* optimized for tablets */
+@media only screen and (min-width: 600px) {
+    .main-header {
+        font-size: 3rem;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
+    #main-container {
+        grid-template-rows: 2.5fr 3fr 2.5fr;
+    }
+    #it-header {
+        font-size: 2.3rem;
+    }
+    .project-links {
+        font-size: 2rem;
+    }
+}
+/* optimized for laptops / computers*/
+@media only screen and (min-width: 800px) {
+    .main-header {
+        font-size: 4rem;
+    }
+    #main-container {
+        grid-template-rows: 2fr 5fr 2fr;
+    }
+    #it-header {
+        font-size: 3.3rem;
+    }
+    .project-links {
+        font-size: 2.4rem;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .main-header {
+        font-size: 5rem;
+    }
+    #it-header {
+        font-size: 4.3rem;
+    }
+    .project-links {
+        font-size: 2.8rem;
+    }
 }
