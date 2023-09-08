@@ -101,6 +101,7 @@ a {
     text-align: center;
     font-family: "Just Sans";
     font-size: 2.5rem;
+    
     color: var(--pink-lavender);
     grid-area: 1 / 1 / 1 / 4;
 }
